@@ -1,6 +1,6 @@
 # Define a base image, but we want to accept an argument to change this
 # Can overwrite when building with `docker build -t <tag> --build-arg BASE_IMAGE`
-ARG NODE_VERSION=16.8.0
+ARG NODE_VERSION=18.13.0
 FROM node:${NODE_VERSION}-alpine AS builder
 
 WORKDIR /app
